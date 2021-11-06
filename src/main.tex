@@ -7,17 +7,39 @@
 \usepackage{lipsum}
 \usepackage{afterpage}
 \usepackage{fancyhdr}
+\usepackage{xr}
 
 \begin{document}
 \include{sub/summary}
 \pagestyle{fancy}
 \fancyhf{}
+\setlength{\headheight}{32.09pt}
 \lhead{Page \thepage \hspace{1pt} of 25}
 \rhead{Team \# 11682}
-\include{sub/toc}
-\include{sub/task1}
-\include{sub/task2}
-\include{sub/task3}
-\include{sub/news}
-\include{sub/ref}
+
+\tableofcontents
+\newpage
+
+\section{Task1}
+\subsection{1.a}
+\input{sub/task1a}
+\subsection{1.b}
+\input{sub/task1b}
+\subsection{1.c}
+\input{sub/task1c}
+
+\section{Task2}
+\input{sub/task2}
+
+\section{Task3}
+\subsection{3.a}
+\input{sub/task3a}
+\subsection{3.b}
+\input{sub/task3b}
+
+\section{news}
+\input{sub/news}
+
+\section{ref}
+\input{sub/ref}
 \end{document}

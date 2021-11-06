@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  6 NOV 2021 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.4)  6 NOV 2021 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -95,24 +95,26 @@ Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
 \f@nch@O@erf=\skip55
 \f@nch@O@olf=\skip56
 \f@nch@O@orf=\skip57
-) (./main.aux (./sub/summary.aux) (./sub/toc.aux) (./sub/task1.aux) (./sub/task2.aux) (./sub/task3.aux) (./sub/news.aux) (./sub/ref.aux))
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/xr.sty
+Package: xr 2019/07/22 v5.05 eXternal References (DPC)
+) (./main.aux (./sub/summary.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 12.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -190,68 +192,34 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `sub/toc.aux'.
-
- (./sub/toc.tex (./main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.49998pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[2
+ [2
 
 
-
-]
-\openout2 = `sub/task1.aux'.
-
- (./sub/task1.tex) [3
-
-
-] [4]
-\openout2 = `sub/task2.aux'.
-
- (./sub/task2.tex) [5
-
-
-] [6]
-\openout2 = `sub/task3.aux'.
-
- (./sub/task3.tex) [7
-
-
-] [8]
-\openout2 = `sub/news.aux'.
-
- (./sub/news.tex) [9
-
-
-] [10]
-\openout2 = `sub/ref.aux'.
-
- (./sub/ref.tex) [11
-
-
-] [12] (./main.aux (./sub/summary.aux) (./sub/toc.aux) (./sub/task1.aux) (./sub/task2.aux) (./sub/task3.aux) (./sub/news.aux) (./sub/ref.aux)) ) 
+] (./sub/task1a.tex) [3] (./sub/task1b.tex) [4] (./sub/task1c.tex) [5] (./sub/task2.tex) [6] (./sub/task3a.tex) [7] (./sub/task3b.tex) [8] (./sub/news.tex) [9] (./sub/ref.tex) [10] [11] (./main.aux (./sub/summary.aux)) ) 
 Here is how much of TeX's memory you used:
- 2612 strings out of 481239
- 44029 string characters out of 5920377
- 550293 words of memory out of 5000000
- 17832 multiletter control sequences out of 15000+600000
- 548897 words of font info for 37 fonts, out of 8000000 for 9000
+ 2619 strings out of 481239
+ 44088 string characters out of 5920377
+ 552679 words of memory out of 5000000
+ 17846 multiletter control sequences out of 15000+600000
+ 555782 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,10n,45p,810b,185s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,45p,810b,215s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (12 pages, 46852 bytes).
+Output written on main.pdf (11 pages, 58545 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
