@@ -1,6 +1,23 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage{times}
+\usepackage[parfill]{parskip}
+\usepackage{lipsum}
+\usepackage{afterpage}
+\usepackage{fancyhdr}
 
 \begin{document}
-Text
+\include{sub/summary}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage \hspace{1pt} of 25}
+\rhead{Team \# 11682}
+\include{sub/toc}
+\include{sub/task1}
+\include{sub/task2}
+\include{sub/task3}
+\include{sub/news}
+\include{sub/ref}
 \end{document}
