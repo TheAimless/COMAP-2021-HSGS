@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,margin=0.75in]{geometry}
@@ -7,7 +8,10 @@
 \usepackage{lipsum}
 \usepackage{afterpage}
 \usepackage{fancyhdr}
-\usepackage{xr}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{makecell}
 
 \begin{document}
 \include{sub/summary}
@@ -20,26 +24,51 @@
 \tableofcontents
 \newpage
 
-\section{Task1}
-\subsection{1.a}
-\input{sub/task1a}
-\subsection{1.b}
-\input{sub/task1b}
-\subsection{1.c}
-\input{sub/task1c}
+\section{Introduction}
+\subsection{Introduction}
+\input{sub/intro}
+\subsection{Restatement of Problem}
+\input{sub/restate}
 
-\section{Task2}
-\input{sub/task2}
+\section{Definitions and Assumptions}
+\subsection{Glossary}
+\input{sub/glossary}
+\subsection{Variables}
+\input{sub/var}
+\subsection{Assumptions \& Justifications}
+\input{sub/assume}
 
-\section{Task3}
-\subsection{3.a}
-\input{sub/task3a}
-\subsection{3.b}
-\input{sub/task3b}
+\section{Requirement 1}
+\subsection{Factors taken into consideration}
+\input{sub/factors}
+\subsection{Electrical appliances}
+\input{sub/electric_appliances}
+\subsection{Mathematical Model}
+\input{sub/model1}
 
-\section{news}
+\section{Requirement 2}
+\subsection{Changes in model}
+\input{sub/changes}
+\subsection{Evaluation}
+\input{sub/evaluation}
+
+\section{Requirement 3}
+Our team has thoroughly analysed the research in the following paper (citation goes here) and concluded several important factors:
+\subsection{Advantages}
+\input{sub/ad}
+\subsection{Disadvantages}
+\input{sub/dis}
+\subsection{Incorporation potentials}
+\input{sub/incorp}
+\subsection{Additional informations}
+\input{sub/addi_info}
+
+\section{Requirement 4}
+\subsection{News article (name placeholder)}
 \input{sub/news}
 
-\section{ref}
+\section{References}
 \input{sub/ref}
+
+\section{Appendix}
 \end{document}
