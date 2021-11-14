@@ -12,14 +12,21 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{makecell}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+%\usepackage{anyfontsize}
+\usepackage{microtype,newspaper,multicol,picinpar,newspaper-mod}
+%\usepackage[utf8]{vietnam}
 
-\begin{document}
-\input{sub/summary}
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{32.09pt}
 \lhead{Page \thepage \hspace{1pt} of 25}
 \rhead{Team \# 11682}
+
+\begin{document}
+\input{sub/summary}
 
 \tableofcontents
 \newpage
@@ -37,27 +44,37 @@
 \input{sub/var}
 \subsection{Assumptions \& Justifications}
 \input{sub/assume}
-\section{Requirement 1}
-\subsection{Electric}
-\subsubsection{Factors taken into consideration}
+
+\section{Energy demands}
+\subsection{Additional factors}
 \input{sub/electric_factors}
-\subsubsection{Electrical appliances}
+\subsection{Electrical appliances}
 \input{sub/electric_appliances}
 
-\subsection{Mathematical Model}
-\subsubsection{Factors taken into consideration}
+\newpage
+\section{Mathematical Model}
+\subsection{Factors taken into consideration}
 \input{sub/maths_factors}
-\subsubsection{Model Construction}
+\subsection{Additional terms \& variables}
+\input{sub/add_term}
+\subsection{Additional assumptions \& justifications}
+\input{sub/add_assume}
+\subsection{Model Construction}
 \input{sub/model1}
 
-\section{Requirement 2}
-\subsection{Changes in model}
+\section{Model evaluation}
+\subsection{Advantages of model}
+\input{sub/admod}
+\subsection{Drawbacks of model}
+\input{sub/dismod}
+
+\section{Changes in model}
 \input{sub/changes}
-\subsection{Evaluation}
+\section{Evaluation}
 \input{sub/evaluation}
 
-\section{Requirement 3}
-Our team has thoroughly analysed the research in the following paper (citation goes here) and concluded several important factors:
+\section{Cement Batteries}
+Cement batteries, despite being relatively new to the 
 \subsection{Advantages}
 \input{sub/ad}
 \subsection{Disadvantages}
@@ -67,10 +84,13 @@ Our team has thoroughly analysed the research in the following paper (citation g
 \subsection{Additional information}
 \input{sub/addi_info}
 
-\section{Requirement 4}
-\subsection{News article (name placeholder)}
+
+\section{News article}
+\newpage
 \input{sub/news}
 
+\pagestyle{fancy}
+\newpage
 \section{References}
 \input{sub/ref}
 

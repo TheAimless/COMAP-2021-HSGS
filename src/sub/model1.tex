@@ -1,6 +1,36 @@
-Lead acid battery is the most used storage element in PV system. The main function of lead acid batteries is the storage and the supply of energy in a PV system. The stored energy is chemical can be converted into electrical and vice versa. The electrochemical reactions are described by the following reactions.
+% Model các cái này ra:
+% Rating, efficiency, capacity, loa, cost, lifetime
+% e the bay gio la sau khi tim duoc cai thiet bi dien roi ay, se thu duoc nhung gia tri nao? (kieu la tong kwh, cai continuous cao nhat (la khi nhieu appliances dung cung mot luc), va cai instantaneous dung ko))
 
-In general, the battery behavior is described by its voltages.
+When installing a battery storage system, we need to determine the types of batteries being installed in the home and the number of batteries installed. In the following equation:
+\begin{equation}
+    N_b = \frac{P_d \times L_a}{C_a}
+\end{equation}
+
+, we will be able to find the number of batteries needed in our system. However, the equation does not take into account the different types of batteries than can be presented in our system. It is therefore necessary to explore different types of batteries, their specifications in order to determine their strengths and weaknesses after installing in our photovoltaic system.
+
+With that in mind, we need to analyse the specifications of different batteries. There are many brands and types of battery chemistry commercially available. Therefore, before installing the batteries in our photovoltaic system, we need to consider our choices:
+\begin{enumerate}
+    \item Lead-acid batteries
+\end{enumerate}
+Lead-acid battery is the most popular and reliable chemistry used in a PV storage system, as it has been around since the 19th century. The stored chemical potential energy in the battery can be converted to electrical energy through the following reaction:
+
+$$\mathrm{Pb}+\mathrm{PbO}_{2}+2 \mathrm{H}_{2} \mathrm{SO}_{4} \rightarrow 2 \mathrm{PbSO}_{4}+2 \mathrm{H}_{2} \mathrm{O}$$
 $$
-V=V_{o c} \pm I R
+E^{0}=2.041 V
 $$
+, in which the voltage produced from the reaction is $2V$.\cite{wiki:lead_acid_battery}
+
+There are many different lead-acid batteries available for solar arrays, and these batteries offer different solutions to our energy needs. After researching online for lead-acid batteries, here are our choices when modeling the 
+
+\begin{enumerate}[resume]
+    \item Lithium-ion batteries
+\end{enumerate}
+Lithium-ion batteries, despite being more expensive than their lead-acid counterpart, are more efficient and allow more depth of discharge than their counterpart, thus being more cost-effective in the long run. Via separating the lithium ions from the electrons via an electrolyte, the electron therefore can be directed through a circuit in order to discharge the chemical potential energy inside.\cite{wiki:li_ion_battery} \\
+
+
+
+\begin{enumerate}[resume]
+    \item Lithium iron phosphate (LFP) batteries
+\end{enumerate}
+LFP battery is a type of lithium-ion battery that uses lithium iron phosphate as cathode material. While the energy density and voltage of this type of battery is lower than that of traditional lithium-ion battery, it is generally safer, cheaper , has higher discharge rate and has more life cycle than that of lithium-ion does.\cite{wiki:lfp_battery}\\ 

@@ -1,15 +1,16 @@
-\begin{tabularx}{\textwidth}{XX}
-    \specialrule{0.5pt}{0pt}{0pt}\toprule
-    \makecell[c]{\bf Assumption} & \makecell[c]{\bf Justification}\\
-    \specialrule{0.75pt}{0pt}{0pt}\midrule
-    \makecell[c]{The house is 2-storey tall \\with a pitched-roof bungalow} & \makecell[l]{Pitched roofs optimize the solar output}\\
-    \midrule
-    \makecell[c]{Calculations are done in winter} & \makecell[l]{Winter is generally the worst-case scenario\\ since there will be less sunshine duration and \\more electricity will be consumed.}\\
-    \midrule
-    \makecell[c]{} & \makecell[l]{}\\
-    \midrule
-    \makecell[c]{} & \makecell[l]{}\\
-    \specialrule{0.25pt}{0pt}{0pt}\bottomrule
-\end{tabularx}
-
-% 
+\begin{enumerate}
+    \item The house is 2-storey tall with a pitched-roof bungalow, and the batteries will be fully charged at the end of a sunny day
+\end{enumerate}
+- By choosing a 2-storey tall pitched-roof bungalow, we can maximise the energy output of each solar panel, thus ensuring that each battery has maximum charge at the end of the day (i.e. no more energy from the sun can be harvested). 
+\begin{enumerate}[resume]
+    \item Calculations will be done in winter
+\end{enumerate}
+- Winter is generally the worst-case scenario since the duration of sunlight will be less compared to the rest of the year and electricity consumption will be highest. Usage of energy-intensive appliances in winter (e.g. boilers, electric heaters) is generally greater than usage of those in summer (i.e. air conditioning).
+\begin{enumerate}[resume]
+    \item There will be days without or with little sunlight (i.e. due to blizzards, overcast, etc.)
+\end{enumerate}
+- This is to consider special occasions when there is no sunlight, in which the number of days of autonomy has to be taken into account, for little solar energy is harvested. By estimating the number of days of autonomy, we can ensure the system will be capable of supporting the house even when solar panels could not harvest energy.
+\begin{enumerate}[resume]
+    \item Batteries start charging when the house is vacant, and stop when everyone is at home.
+\end{enumerate}
+- During the morning, when the weather is sunny, the batteries will start charging, thus reaching maximum capacity at the end of the day. Otherwise, there will be no net gain, hence the batteries will expend their energy stored inside.
