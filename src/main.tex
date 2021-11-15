@@ -1,4 +1,5 @@
 \documentclass[12pt]{article}
+\usepackage[labelfont=bf]{caption}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -12,20 +13,21 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{makecell}
-\usepackage{natbib}
+\usepackage[numbers,sort&compress]{natbib}
 \usepackage{graphicx}
 \usepackage{pdflscape}
 %\usepackage{anyfontsize}
 \usepackage{microtype,newspaper,multicol,picinpar,newspaper-mod}
 \usepackage{url}
 \usepackage{float}
-%\usepackage[utf8]{vietnam}
 
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{32.09pt}
 \lhead{Page \thepage \hspace{1pt} of 25}
 \rhead{Team \# 11682}
+
+\graphicspath{ {./src/} }
 
 \begin{document}
 \include{sub/summary}
@@ -75,16 +77,17 @@
 \input{sub/evaluation}
 
 \section{Cement Batteries}
-Cement batteries, despite being relatively new to the 
+In 2021, researchers Emma Zhang and Luping Tang from Chalmers University of Technology, Gothenburg, Sweden\cite{buildings11030103} have discovered that cement can act as a medium to store and expend electricity (i.e. a rechargeable battery). By selecting iron (Fe) and zinc (Zn) as anodes, and nickel (Ni) oxides as cathodes, they determined that the best performance of the cement battery was the Ni-Fe battery, with short carbon fiber (CF) being added into the cement to modify the conductivity of the cement-based electrolytes,
+
+In this part, we shall discuss the advantages and disadvantages that these batteries may possess, a possible way to implement the battery in our 1600 square-foot home and additional information required in order to solve more questions.
 \subsection{Advantages}
 \input{sub/ad}
 \subsection{Disadvantages}
 \input{sub/dis}
-\subsection{Incorporation potentials}
+\subsection{Incorporation details}
 \input{sub/incorp}
 \subsection{Additional information}
 \input{sub/addi_info}
-
 
 \section{News article}
 \newpage
