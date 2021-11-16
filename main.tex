@@ -16,10 +16,14 @@
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage{graphicx}
 \usepackage{pdflscape}
+\usepackage{pgf-pie} 
 %\usepackage{anyfontsize}
 \usepackage{microtype,newspaper,multicol,picinpar,newspaper-mod}
 \usepackage{url}
 \usepackage{float}
+\usepackage{ltablex}
+\usepackage{listings}
+\usepackage{comment}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -55,34 +59,31 @@
 \subsection{Electrical appliances}
 \input{sub/electric_appliances}
 
-%Hệ thống rating cho các stats: Sẽ rất khó để chỉ nhìn vào các thông số , mà biết được thông số nào mang ý nghĩa nào và đánh giá chúng ra sao, đặc biệt là đối với những người không có quá nhiều kiến thức về pin hay các đồ dùng điện. Chúng tôi cho rằng cần có một hệ thống rating dễ hiểu, tiện cho người tiêu dùng ngay cả khi họ không hiểu rõ về pin, song vẫn đảm bảo được sự chính xác khi đánh giá, giúp lựa chọn loại pin phù hợp cho việc dự trữ năng lượng mặt trời. Sau đây là một số tiêu chí, và một vài công thức để bạn có thể nhận xét về hệ thống điện của bạn.
-
-
 \section{Mathematical Model}
 \subsection{Additional terms \& variables}
 \input{sub/add_term}
 \subsection{Additional assumptions \& justifications}
 \input{sub/add_assume}
-\subsection{Factors taken into consideration}
+\subsection{Factors presented in the model}
 \input{sub/maths_factors}
 \subsection{Model Construction}
 \input{sub/model1}
 
 \section{Model evaluation}
-\subsection{Advantages of model}
+\subsection{Advantages}
 \input{sub/admod}
-\subsection{Drawbacks of model}
+\subsection{Drawbacks}
 \input{sub/dismod}
 
 \section{Changes in model}
 \input{sub/changes}
-\section{Evaluation}
+\subsection{Additional remarks}
 \input{sub/evaluation}
 
 \section{Cement Batteries}
-In 2021, researchers Emma Zhang and Luping Tang from Chalmers University of Technology, Gothenburg, Sweden\cite{buildings11030103} have discovered that cement can act as a medium to store and expend electricity (i.e. a rechargeable battery). By selecting iron (Fe) and zinc (Zn) as anodes, and nickel (Ni) oxides as cathodes, they determined that the best performance of the cement battery was the Ni-Fe battery, with short carbon fiber (CF) being added into the cement to modify the conductivity of the cement-based electrolytes,
+In 2021, researchers Emma Zhang and Luping Tang from Chalmers University of Technology, Gothenburg, Sweden\cite{buildings11030103} have discovered that cement can act as a medium to store and expend electricity (i.e., a rechargeable battery). By selecting iron (Fe) and zinc (Zn) as anodes and nickel (Ni) oxides as cathodes, they determined that the best performance of the cement battery was the Ni-Fe battery, with short carbon fiber (CF) being added into the cement to modify the conductivity of the cement-based electrolytes.
 
-In this part, we shall discuss the advantages and disadvantages that these batteries may possess, a possible way to implement the battery in our 1600 square-foot home and additional information required in order to solve more questions.
+In this part, we shall discuss the advantages and disadvantages that these batteries may possess, a possible way to implement the battery in our 1600 square-foot home and additional information required to solve more questions.
 \subsection{Advantages}
 \input{sub/ad}
 \subsection{Disadvantages}
@@ -100,8 +101,8 @@ In this part, we shall discuss the advantages and disadvantages that these batte
 \newpage
 \section{References}
 \input{sub/ref}
-
 \newpage
+
 \section{Appendix}
 \input{sub/appendix}
 \end{document}

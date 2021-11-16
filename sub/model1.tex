@@ -1,0 +1,91 @@
+First, we need to analyse the specifications of different batteries. There are many brands and types of batteries commercially available. Therefore, before installing the batteries in our photovoltaic system, we need to consider our choices:
+\begin{enumerate}
+    \item Lead-acid batteries
+\end{enumerate}
+Lead-acid battery is the most popular and reliable chemistry used in a PV storage system, as it has been around since the 19th century. The stored chemical potential energy in the battery can be converted to electricity by the following reaction:
+
+$$\mathrm{Pb}+\mathrm{PbO}_{2}+2 \mathrm{H}_{2} \mathrm{SO}_{4} \rightarrow 2 \mathrm{PbSO}_{4}+2 \mathrm{H}_{2} \mathrm{O}$$
+$$
+E^{0}=2.041 V
+$$
+, in which the voltage produced from the reaction is $2V$.\cite{wiki:lead_acid_battery}
+
+\begin{enumerate}[resume]
+    \item Lithium-ion batteries 
+\end{enumerate}
+Despite lithium-ion batteries being more expensive than their lead-acid counterparts, they are more efficient and allow more depth of discharge, thus being more cost-effective in the long run. Via separating the lithium ions from the electrons via an electrolyte, the electron can be directed through a circuit to discharge the chemical potential energy inside.\cite{wiki:li_ion_battery} \\
+
+\begin{enumerate}[resume]
+    \item Lithium iron phosphate (LFP) batteries
+\end{enumerate}
+LFP battery is a lithium-ion battery that uses lithium iron phosphate instead of lithium cobalt oxide as cathode material. While the energy density and nominal voltage of this type of battery are lower than that of a traditional lithium-ion battery, it is generally safer, cheaper, has a higher discharge rate and has a longer life cycle.\cite{wiki:lfp_battery}\\ 
+With all of that in mind, we decided to choose 15 batteries, with 4 being lead-acid batteries, 11 being lithium-ion batteries, with 7 of which are lithium iron phosphate batteries. This is because we need to test a variety of batteries to find the most optimal choice between different batteries (see \textbf{Appendix} A for additional information).
+
+However, it will be very difficult for people who have not worked with either batteries or electrical devices before to assess the following table to find the "best" battery. Our team determines that there should be a rating system that is easy to understand, convenient for users but also accurate during evaluation, making the process of choosing a suitable battery for solar energy storage easier. Here are several factors\cite{solar:guide} and formulas our team has taken into consideration and a model that assesses multiple battery storage systems:
+
+\begin{enumerate}
+    \item Power rating
+\end{enumerate}
+The following formula,
+\begin{equation}
+    R_p = \frac{P_c \times 59 + P_i}{60} \times \text{average usage per hour}
+    \label{eq:-2}
+\end{equation}
+returns the average power rating concerning the continuous power rating, the instantaneous power rating and the average power consumed per hour. Within an hour, the device only reaches peak power usage for about one minute, with the rest consuming energy at a constant rate. Therefore, we can calculate the mean power by using the formula (59 * continuous power rating + instantaneous power rating), after which is then divided by the correct coefficient (60 minutes in an hour, 59 minutes of constant power usage and one minute of peak power consumption).
+
+\begin{enumerate}[resume]
+    \item Cost rating
+\end{enumerate}
+The cost rating is calculated through the following formula:
+\begin{equation}
+    C_r = \frac{\text{Cost}}{\text{Lifetime}} = \frac{\text{Cost}}{(N_c / 365)}
+    \label{eq:-1}
+\end{equation}
+Because each battery has a different lifetime and cost, it can be hard to evaluate directly based on the original price. We believe that calculating the average cost per year spent on the system is a reasonable choice. As a day consists of a cycle on average, therefore the duration in which the battery system is used is approximately the number of cycles divided by 365 days in a year. From that, we can derive a formula to calculate the cost rating.
+
+\begin{enumerate}[resume]
+    \item Capacity rating
+\end{enumerate}
+The capacity rating is calculated as follow:
+\begin{equation}
+    R_\text{cap} = \frac{N_b \times C_a}{E_\text{daily} \times L_a} 
+    \label{eq:0}
+\end{equation}
+As we mainly use the batteries when there is no sunlight, which invokes the length of autonomy (LoA), our battery system needs to store enough electricity to use during the duration of the LoA ($E_daily \times L_a$). We can calculate the amount of electricity stored in the system by multiplying the number of batteries by the battery's capacity. Therefore, to find the ratio between capacity, we use the formula above.
+\begin{equation}
+    \text{minimum } SoH = \frac{L_a \times E_\text{daily}}{N_b \times C_a \times DoD \times RTE}\label{eq:1}
+\end{equation}
+For the batteries to be utilised to their maximum potential, they need to supply enough electricity during a discharge cycle. Thus, the minimum state of health (in percent) can be calculated via the equation\eqref{eq:1} by dividing the total energy used for the entire duration of the length of autonomy by the amount of electricity the system can supply.
+\begin{equation}
+    SoH \text{ decreasing rate} = \frac{1 - \text{warranty } SoH}{365 \times \text{warranty length}}\label{eq:2}
+\end{equation}
+As batteries operate on an electrochemical basis, they will inevitably degrade over time. This value is represented by the state of health, which additionally is the capacity percentage of a used battery compared to an unused one. Many battery manufacturers include details on the warranty period of the battery in addition to the estimated state of health when the warranty expires. When the state of health falls under a certain threshold, its quality will decline as it cannot charge and supply enough electricity for home usage. From all of these values, we can calculate the average decreasing rate of the state of health via the equation \eqref{eq:2}, in which the warranty $SoH$ is the state of health of an unused battery and the warranty time is the number of years of warranty.
+\begin{equation}
+    \text{Expected }N_c = \frac{1 - SoH}{SoH \text{ decreasing rate}}\label{eq:3}
+\end{equation}
+
+After calculating the rate of degradation of the state of health, we can find the number of estimated cycles we can use through equation \eqref{eq:3}. This number of cycles is an important factor that affects the estimated lifespan of the battery system.
+
+\begin{equation}
+    \text{Lifetime} = \frac{\min{(\text{warranty cycle}, \text{expected }}N_c)}{365}\label{eq:4}
+\end{equation}
+
+Finally, equation \eqref{eq:4} calculates the lifespan of the battery system; the warranty cycle is the number of usable cycles based on the manufacturer's warranty, and the number of expected cycles is the number of times we estimated the battery to work in peak condition. But why do we have to take the minimum between the two? Besides the simple factors we have just calculated, the lifetime of a battery depends on other complex external factors; if we consider every single factor, the model will become too complicated. Therefore, our team will not address these problems since these variables are included in the specification sheet that comes with the battery.
+
+After constructing a rating system for batteries, we found that it is necessary to have a general rating for everyone to refer to easily. Our team still utilises each criterion's rating to evaluate, although a general rating will allow customers to have a better insight into each battery to choose from. We calculate the general rating via each rating in different proportions. Nevertheless, before combining each rating, they need to have roughly the same value, as it is not feasible to merge a cost rating of \$350 per year with a power rating of 1.05. In light of this, our team decided to include additional variables. Since the mean power rating of each battery type lies within the range of 5 and 8, adding $\frac{1}{6}$ in front will help reduce the value to 1, making calculations easier. In addition, the cost rating is better the smaller it gets, so when contributing to the general rating, we will calculate its complement. We also divide the cost rating by 1000, as the average cost spent on solar batteries per year falls from \$900 to \$1000. Finally, all the ratings are combined with the proportions equivalent to this pie chart:
+
+\begin{figure}[ht]
+    \centering
+    \begin{tikzpicture}
+        \pie[text=legend,radius=2]{30/Power rating,
+        40/Capacity rating,
+        25/Cost rating,
+        5/Warranty} 
+    \end{tikzpicture}
+    \caption{Proportion of each rating in the general rating}
+\end{figure}
+
+We can finally derive a general rating formula as follow:
+\begin{equation}
+    R_g = \frac{0.5R_p + 4R_\text{cap} + 2.5 \times (100\% - (R_\text{cost} / 1000)) + 0.5 \times \text{warranty rating}}{10}
+\end{equation}
